@@ -1,4 +1,4 @@
-/* =====  CSS by Christina Carrasquilla =====  */
+/* =====  CSS by Christina Carrasquilla, updated by Steven Plomedahl =====  */
 
 /* ===== Color Palette 
 
@@ -14,86 +14,111 @@ Border:#E5E5E5
 /* ===== GLOBAL (Base) Styles ===== */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #F7F4EF;
-    color: #2F2F2F;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f4ef;
+  color: #2f2f2f;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 header {
-    background-color: #B35A3C;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  background-color: #b35a3c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 header img {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 header p {
-    font-style:italic;
+  font-style: italic;
 }
 nav {
-    background-color: #2F2F2F;
-    padding:.5rem;
+  background-color: #2f2f2f;
+  padding: 0.5rem;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    display: inline-block;
-    text-transform:uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-    background-color: #B35A3C;
+  background-color: #b35a3c;
 }
 
 main {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+main a {
+  background-color: #d9a441;
+  color: #2f2f2f;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+main a:hover {
+  background-color: #b35a3c;
+  color: white;
 }
 
 section {
-    margin-bottom: 2rem;
-}
-
-.card-row {
-    display: flex;
-    gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .card-row section {
-    background-color: white;
-    border: 1px solid #E5E5E5;
-    padding: 1rem;
-    width: 30%;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
 }
 
 img {
-    display: block;
-    margin-top: 0.5rem;
-    max-width: 100%;
+  display: block;
+  margin-top: 0.5rem;
+  max-width: 100%;
 }
 
 aside {
-    background-color: #D9A441;
-    padding: 1rem;
-    margin: 1rem;
+  background-color: #d9a441;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 footer {
-    background-color: #2F2F2F;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===== MEDIA QUERY (MEDIUM SIZES) ===== */
+@media screen and (min-width: 817px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card-row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .card-row section {
+    width: 30%;
+  }
 }
